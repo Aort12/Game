@@ -81,20 +81,4 @@ playGame();
 
 
 
-/*if (
-        (getHumanChoice == "rock" && getComputerChoice == "scissors") ||
-        (getHumanChoice == "paper" && getComputerChoice == "rock") ||
-        (getHumanChoice == "scissors" && getComputerChoice == "paper")) {
-            ++humanScore;
-            alert('You win! Your score:' + (humanScore),'Computer Score:' + (computerScore))
-        } else if(getHumanChoice == getComputerChoice) {
-            alert('Its a tie! Your score:' + (humanScore), 'Computer Score:' + (computerScore))
-        } else {
-            ++computerScore;
-            alert('You lose! Your score:' + (humanScore), 'Computer Score:' + (computerScore))
-        }
-    */
-
-
-
 
