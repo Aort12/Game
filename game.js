@@ -47,21 +47,23 @@ function playGame() {
 
     let i = playRound();
     
-    for (i=0; i<5; i++) {
+    for (i=0; i<11; i++) {
         
 
     if (humanScore == 5){
-        alert('You win the game)')
+        alert('You win the game)');
         break;
         
         
         
         } else if (computerScore == 5){
-            alert('You lose this game')
+            alert('You lose this game');
             break; 
-        }
         
-
+        } else if (i == 10){
+            alert('Game is end, try again');
+            break;
+        }
      
      
      playRound();
