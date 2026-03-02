@@ -3,38 +3,49 @@ let computerScore = 0;
 
 
 document.getElementById('start').addEventListener('click', playGame);
+document.getElementById('start').addEventListener('click', hidestart)
+document.getElementById('start').addEventListener('click', ()=> {
+    document.getElementById('computerch').style.display = 'flex';
+})
+
+function hidestart () {
+    let but = document.getElementById('start');
+    but.style.display = "none";
+}
+
+
 
 function getComputerChoice() {
-        let words = ["rock", "paper", "scissors"];
+        let words = ["Rock", "Paper", "Scissors"];
         let randomWords = words[Math.floor(Math.random() * words.length)];
-        alert(randomWords)
+        document.getElementById('computerch').textContent = randomWords;
         return randomWords;
     }
 
     function playGame() {
         function playRound(){
             
-            
-            
+            document.getElementById('Rock').addEventListener('click', variants);
+            document.getElementById('Paper').addEventListener('click', variants);
+            document.getElementById('Scissors').addEventListener('click', variants);
+            document.getElementById('nextroundbtn').addEventListener('click', nextrou);
 
-            document.getElementById('rock').addEventListener('click', variants);
-            document.getElementById('paper').addEventListener('click', variants);
-            document.getElementById('scissors').addEventListener('click', variants);
+        
 
         function variants(event){
             const computerChoice = getComputerChoice();
             const humanChoice = event.target.id
             if (
-                (humanChoice == "rock" && computerChoice == "scissors") ||
-                (humanChoice == "paper" && computerChoice == "rock") ||
-                (humanChoice == "scissors" && computerChoice == "paper")) {
+                (humanChoice == "Rock" && computerChoice == "Scissors") ||
+                (humanChoice == "Paper" && computerChoice == "Rock") ||
+                (humanChoice == "Scissors" && computerChoice == "Paper")) {
                     humanScore++;
-                    console.log('You win! Score: You - ' + humanScore + ', Computer Score - ' + computerScore);
+                    document.getElementById('resoult').textContent = 'You win! Score: You - ' + humanScore + ', Computer Score - ' + computerScore;
                 } else if(humanChoice == computerChoice) {
-                    console.log('Its a tie! Score: You - ' + humanScore + ', Computer Score - ' + computerScore);
+                    document.getElementById('resoult').textContent = 'Its a tie! Score: You - ' + humanScore + ', Computer Score - ' + computerScore;
                 } else {
                     computerScore++;
-                    console.log('You lose! Score: You - ' + humanScore + ', Computer Score - ' + computerScore);
+                    document.getElementById('resoult').textContent = 'You lose! Score: You - ' + humanScore + ', Computer Score - ' + computerScore;
         
                 } 
             
@@ -47,7 +58,14 @@ function getComputerChoice() {
                 }
                 
                 }}
-            start.disabled = true;
+            
+        function nextrou (){
+            document.getElementById('computerch').textContent = 'ㅤㅤㅤㅤㅤ';
+            document.getElementById('resoult').textContent = 'ㅤㅤㅤㅤㅤ';
+            return playRound();
+
+        }
+            
             playRound();
         }
 
