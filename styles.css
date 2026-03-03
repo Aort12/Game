@@ -1,0 +1,133 @@
+body {
+    margin: 0px;
+    background-image: url(./images/wallpaper.jpg);
+    
+}
+
+#game {
+    display: block;
+    align-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#variants {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#panel {
+    display: inline-block;
+    justify-content: center;
+    backdrop-filter: blur(10px); 
+    background: rgba( 255, 255, 255, 0.25 ); 
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.39);
+    padding: 10px;
+}
+
+#startb {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+#start {
+    font-size: 30px;
+    backdrop-filter: blur(10px); 
+    background: rgba( 255, 255, 255, 0.25 ); 
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.39)
+}
+
+#Rock {
+    font-size: 30px;
+    backdrop-filter: blur(10px); 
+    background: rgba( 255, 255, 255, 0.25 ); 
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.39)
+}
+#Paper {
+    font-size: 30px;
+    backdrop-filter: blur(10px); 
+    background: rgba( 255, 255, 255, 0.25 ); 
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.39)
+}
+#Scissors {
+    font-size: 30px;
+    backdrop-filter: blur(10px); 
+    background: rgba( 255, 255, 255, 0.25 ); 
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.39)
+}
+
+#resoult {
+    display: flex;
+    backdrop-filter: blur(10px); 
+    background: rgba( 255, 255, 255, 0.25 ); 
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    -webkit-backdrop-filter: blur( 10px );
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 30px;
+}
+
+#computer {
+    display: flex;
+    justify-content: center;
+}
+
+#computerch {
+    display: none;
+    backdrop-filter: blur(10px); 
+    background: rgba( 255, 255, 255, 0.25 ); 
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    -webkit-backdrop-filter: blur( 10px );
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.39);
+    font-size: 30px;
+    text-align: left;
+    padding: 10px;
+}
+
+
+#nextroundbtn {
+    backdrop-filter: blur(10px); 
+    background: rgba( 255, 255, 255, 0.25 ); 
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    -webkit-backdrop-filter: blur( 10px );
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.39);
+    font-size: 30px;
+    cursor: default;
+
+}
+
+#newgame {
+    display: none;
+    backdrop-filter: blur(10px); 
+    background: rgba( 255, 255, 255, 0.25 ); 
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    -webkit-backdrop-filter: blur( 10px );
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.39);
+    font-size: 30px;
+    cursor: default;
+}
