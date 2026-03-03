@@ -50,11 +50,19 @@ function getComputerChoice() {
                 } 
             
             if (humanScore == 5){
-                    alert('You win the all game)');
-                    location.reload() 
+                    document.getElementById('resoult').textContent = ' YOU WIIINN ALL THE GAME ';
+                    document.getElementById('nextroundbtn').style.display = "none";
+                    document.getElementById('newgame').style.display = "block";
+                    document.getElementById('newgame').addEventListener('click', nextgame);
+                    document.getElementById('variants').style.display = "none";
+                    document.getElementById('computerch').style.display = "none";              
                 } else if (computerScore == 5){
-                    alert('You lose the all game)');
-                    location.reload()
+                    document.getElementById('resoult').textContent = ' You lose all the game, try more ';
+                    document.getElementById('nextroundbtn').style.display = "none";
+                    document.getElementById('newgame').style.display = "block";
+                    document.getElementById('newgame').addEventListener('click', nextgame);
+                    document.getElementById('variants').style.display = "none";
+                    document.getElementById('computerch').style.display = "none";
                 }
                 
                 }}
@@ -62,13 +70,18 @@ function getComputerChoice() {
         function nextrou (){
             document.getElementById('computerch').textContent = 'ㅤㅤㅤㅤㅤ';
             document.getElementById('resoult').textContent = 'ㅤㅤㅤㅤㅤ';
-            return playRound();
+
+        }
+
+        function nextgame (){
+            location.reload();
 
         }
             
             playRound();
         }
 
+       
                 
 
             
